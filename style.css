@@ -1,0 +1,103 @@
+/* Importando a fonte Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Reset básico para remover margens e paddings padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do body para centralizar tudo */
+body {
+    font-family: 'Roboto', sans-serif; /* Aplicando a fonte Roboto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e4ffd3; /* Cor de fundo clean com tom bege suave */
+    padding: 20px;
+}
+
+/* Estilizando o cabeçalho com a logo centralizada */
+header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+header img {
+    width: 100px; /* Tamanho da logo reduzido */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Estilo para a seção principal, com background clean */
+main section {
+    background-color: #fffeb7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-top: -30px; /* Levantando a seção */
+}
+
+/* Estilo dos campos de entrada e seleção de moedas */
+div {
+    margin-bottom: 20px;
+}
+
+/* Estilo dos rótulos */
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+    color: #4caf50; /* Cor verde suave para os rótulos */
+}
+
+/* Estilo dos select e input */
+select, input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #f1f8e9; /* Fundo claro de verde suave */
+    color: #333;
+}
+
+/* Botão converter estilizado com verde */
+button {
+    background-color: #4caf50; /* Cor de fundo verde */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #388e3c; /* Verde mais escuro no hover */
+}
+
+/* Campo de saída (valor convertido) com destaque */
+input[readonly] {
+    background-color: #f1f8e9; /* Fundo claro de verde suave */
+    font-weight: bold;
+    border: 2px solid #4caf50; /* Borda verde */
+    color: #333;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}

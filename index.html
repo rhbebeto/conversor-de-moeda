@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor de Moedas</title>
+</head>
+
+<body>
+    <header>
+        <img src="10017583.png" alt="Logo">
+    </header>
+    <main>
+        <section>
+            <!-- Primeira moeda para selecionar -->
+            <div>
+                <label for="currency1">De:</label>
+                <select id="moeda1">
+                    <option value="USD">US$ (Dólar)</option>
+                    <option value="BRL">R$ (Real)</option>
+                    <option value="EUR">€ (Euro)</option>
+                </select>
+                <!-- Campo para inserir o valor -->
+                <input id="valor1" type="number" placeholder="Valor" />
+            </div>
+
+            <!-- Segunda moeda para selecionar -->
+            <div>
+                <label for="currency2">Para:</label>
+                <select id="moeda2">
+                    <option value="USD">US$ (Dólar)</option>
+                    <option value="BRL">R$ (Real)</option>
+                    <option value="EUR">€ (Euro)</option>
+                </select>
+                <!-- Campo de saída apenas leitura -->
+                <input id="valor2" type="number" placeholder="Valor convertido" readonly />
+            </div>
+
+            <!-- Botão para realizar a conversão -->
+            <button onclick="converter()">Converter</button>
+
+        </section>
+    </main>
+    <footer>
+        ®Desenvolvido por Bebeto
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
